@@ -1,5 +1,7 @@
 # Parcial P3 - Registro y Login de Usuarios
 
+de La Madrid Carlos.
+
 ## Descripción del proyecto
 
 Este proyecto consiste en un módulo frontend de registro y autenticación de usuarios desarrollado con HTML, CSS y JavaScript puro.
@@ -193,7 +195,7 @@ Para evitar que la página se recargue al enviar los formularios.
 
 El siguiente diagrama representa el flujo general del registro y del login implementado en el código.
 
-![Diagrama de flujo del proceso](img/diagrama-flujo.png)
+![Diagrama de flujo del proceso](img/diagrama_flujo_parcial_p3.jpg)
 
 ---
 
@@ -307,11 +309,6 @@ Crea automáticamente un usuario de prueba en `localStorage` si todavía no exis
 * El código está organizado en archivos separados.
 * El sistema se encuentra funcional.
 
----
 
-## Consideración importante
 
-Este proyecto fue desarrollado con fines educativos.
-Las contraseñas se guardan en `localStorage` solamente para cumplir con la consigna del trabajo práctico.
 
-En un sistema real, las contraseñas no deberían almacenarse directamente en el navegador, sino procesarse de forma segura desde un servidor.
