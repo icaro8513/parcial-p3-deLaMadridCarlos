@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro y Login - Parcial P3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main class="contenedor">
+
+        <section class="tarjeta">
+            <h1>Registro de Usuario</h1>
+
+            <form id="formRegistro" novalidate>
+
+                <div class="grupo">
+                    <label for="nombre">Nombre y apellido</label>
+                    <input type="text" id="nombre">
+                    <small id="errorNombre"></small>
+                </div>
+
+                <div class="grupo">
+                    <label for="emailRegistro">Email</label>
+                    <input type="email" id="emailRegistro">
+                    <small id="errorEmailRegistro"></small>
+                </div>
+
+                <div class="grupo">
+                    <label for="passwordRegistro">Contraseña</label>
+                    <input type="password" id="passwordRegistro">
+                    <small id="errorPasswordRegistro"></small>
+                </div>
+
+                <div class="grupo">
+                    <label for="confirmarPassword">Confirmar contraseña</label>
+                    <input type="password" id="confirmarPassword">
+                    <small id="errorConfirmarPassword"></small>
+                </div>
+
+                <div class="grupo">
+                    <label for="fechaNacimiento">Fecha de nacimiento</label>
+                    <input type="date" id="fechaNacimiento">
+                    <small id="errorFechaNacimiento"></small>
+                </div>
+
+                <div class="grupo checkbox">
+                    <input type="checkbox" id="terminos">
+                    <label for="terminos">Acepto los términos y condiciones</label>
+                </div>
+                <small id="errorTerminos"></small>
+
+                <button type="submit" id="btnRegistro">Registrarse</button>
+
+                <p id="mensajeRegistro" class="mensaje"></p>
+
+            </form>
+        </section>
+
+        <section class="tarjeta">
+            <h1>Login de Usuario</h1>
+
+            <form id="formLogin" novalidate>
+
+                <div class="grupo">
+                    <label for="emailLogin">Email</label>
+                    <input type="email" id="emailLogin">
+                    <small id="errorEmailLogin"></small>
+                </div>
+
+                <div class="grupo">
+                    <label for="passwordLogin">Contraseña</label>
+                    <input type="password" id="passwordLogin">
+                    <small id="errorPasswordLogin"></small>
+                </div>
+
+                <button type="submit" id="btnLogin">Iniciar sesión</button>
+
+                <p id="mensajeLogin" class="mensaje"></p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
