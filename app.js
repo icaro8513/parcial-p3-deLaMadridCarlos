@@ -1,15 +1,15 @@
-// Clave que vamos a usar para guardar los usuarios en localStorage
+// Clave que uso a usar para guardar los usuarios en localStorage
 const STORAGE_KEY = "usuariosParcialP3";
 
-// Capturamos los formularios del DOM
+// Capturo los formularios del DOM
 const formRegistro = document.getElementById("formRegistro");
 const formLogin = document.getElementById("formLogin");
 
-// Capturamos los botones
+// Capturo los botones
 const btnRegistro = document.getElementById("btnRegistro");
 const btnLogin = document.getElementById("btnLogin");
 
-// Función que simula una petición a un servidor
+// Función que simula una petición a un servidor(fake request)
 function fakeRequest(data) {
     return new Promise((resolve) => {
         setTimeout(() => resolve(data), 1000);
@@ -228,7 +228,7 @@ function crearUsuarioDePrueba() {
     }
 }
 
-// Ejecutamos la creación del usuario de prueba al cargar la página
+// Ejecuta la creación del usuario de prueba al cargar la página
 crearUsuarioDePrueba();   
 
     usuarios.push(nuevoUsuario);
